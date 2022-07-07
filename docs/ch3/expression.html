@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>变量定义 · GitBook</title>
+        <title>表达式 · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,10 +57,8 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="constdefine.html" />
     
-    
-    <link rel="prev" href="./" />
+    <link rel="prev" href="statement.html" />
     
 
     </head>
@@ -147,9 +145,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3" data-path="./">
+        <li class="chapter " data-level="1.3" data-path="../ch1/">
             
-                <a href="./">
+                <a href="../ch1/">
             
                     
                     ch1 数据
@@ -161,9 +159,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter active" data-level="1.3.1" data-path="vardefine.html">
+        <li class="chapter " data-level="1.3.1" data-path="../ch1/vardefine.html">
             
-                <a href="vardefine.html">
+                <a href="../ch1/vardefine.html">
             
                     
                     变量定义
@@ -174,9 +172,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.2" data-path="constdefine.html">
+        <li class="chapter " data-level="1.3.2" data-path="../ch1/constdefine.html">
             
-                <a href="constdefine.html">
+                <a href="../ch1/constdefine.html">
             
                     
                     常量定义
@@ -187,9 +185,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.3" data-path="datatype.html">
+        <li class="chapter " data-level="1.3.3" data-path="../ch1/datatype.html">
             
-                <a href="datatype.html">
+                <a href="../ch1/datatype.html">
             
                     
                     数据类型
@@ -250,9 +248,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5" data-path="../ch3/">
+        <li class="chapter " data-level="1.5" data-path="./">
             
-                <a href="../ch3/">
+                <a href="./">
             
                     
                     ch3 程序结构
@@ -264,9 +262,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.5.1" data-path="../ch3/statement.html">
+        <li class="chapter " data-level="1.5.1" data-path="statement.html">
             
-                <a href="../ch3/statement.html">
+                <a href="statement.html">
             
                     
                     语句
@@ -277,9 +275,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5.2" data-path="../ch3/expression.html">
+        <li class="chapter active" data-level="1.5.2" data-path="expression.html">
             
-                <a href="../ch3/expression.html">
+                <a href="expression.html">
             
                     
                     表达式
@@ -325,7 +323,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >变量定义</a>
+        <a href=".." >表达式</a>
     </h1>
 </div>
 
@@ -340,52 +338,7 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="&#x53D8;&#x91CF;&#x5B9A;&#x4E49;">&#x53D8;&#x91CF;&#x5B9A;&#x4E49;</h1>
-<h2 id="&#x53D8;&#x91CF;&#x58F0;&#x660E;">&#x53D8;&#x91CF;&#x58F0;&#x660E;</h2>
-<ol>
-<li><p>&#x6807;&#x51C6;&#x58F0;&#x660E;&#x683C;&#x5F0F;&#x4E3A;</p>
-<pre><code class="lang-go"><span class="hljs-comment">// var &#x53D8;&#x91CF;&#x540D; &#x53D8;&#x91CF;&#x7C7B;&#x578B;</span>
-<span class="hljs-keyword">var</span> name <span class="hljs-keyword">string</span>
-<span class="hljs-keyword">var</span> arg <span class="hljs-keyword">int</span>
-</code></pre>
-</li>
-<li><p>&#x6279;&#x91CF;&#x58F0;&#x660E;&#x683C;&#x5F0F;&#x4E3A;</p>
-<pre><code class="lang-go"><span class="hljs-comment">/*
-var(
-    &#x53D8;&#x91CF;&#x540D; &#x53D8;&#x91CF;&#x7C7B;&#x578B;
-    &#x2026;&#x2026;
-)
-*/</span>
-<span class="hljs-keyword">var</span>(
-    name <span class="hljs-keyword">string</span>
-       age <span class="hljs-keyword">int</span>
-)
-</code></pre>
-</li>
-<li><p>&#x5E26;&#x521D;&#x59CB;&#x5316;&#x7684;&#x58F0;&#x660E;</p>
-<pre><code class="lang-go"><span class="hljs-comment">// var &#x53D8;&#x91CF;&#x540D; &#x7C7B;&#x578B; = &#x8868;&#x8FBE;&#x5F0F;</span>
-<span class="hljs-keyword">var</span> name <span class="hljs-keyword">string</span> = <span class="hljs-string">&quot;hello world!!!&quot;</span>
-<span class="hljs-comment">// &#x53D8;&#x91CF;&#x7C7B;&#x578B;&#x63A8;&#x5BFC;</span>
-<span class="hljs-keyword">var</span> name = <span class="hljs-string">&quot;hello world!!!&quot;</span>
-<span class="hljs-comment">// var &#x53D8;&#x91CF;&#x540D;1, &#x53D8;&#x91CF;&#x540D;2&#xFF0C;&#x2026;&#x2026; = &#x8868;&#x8FBE;&#x5F0F;1&#xFF0C; &#x8868;&#x8FBE;&#x5F0F;2&#xFF0C;&#x2026;&#x2026;</span>
-<span class="hljs-keyword">var</span> name, age = <span class="hljs-string">&quot;cain&quot;</span>, <span class="hljs-number">1</span>
-</code></pre>
-</li>
-<li><p>&#x77ED;&#x53D8;&#x91CF;&#x58F0;&#x660E;</p>
-<p>&#x5728;&#x51FD;&#x6570;&#x5185;&#x90E8;&#x91C7;&#x7528;&#x7684;&#x65B9;&#x5F0F;</p>
-<pre><code class="lang-go"><span class="hljs-keyword">func</span> main(){
-    n := <span class="hljs-number">10</span>
-    m := <span class="hljs-number">20</span>
-    fmt.Println(m, n)
-}
-</code></pre>
-</li>
-<li><p>&#x533F;&#x540D;&#x53D8;&#x91CF;</p>
-<pre><code class="lang-go"><span class="hljs-comment">// &#x5F53;&#x4E0D;&#x60F3;&#x8981;&#x67D0;&#x4E00;&#x4E2A;&#x503C;&#x7684;&#x65F6;&#x5019;&#x4F7F;&#x7528; _&#xFF0C; &#x4E0D;&#x5360;&#x7528;&#x5185;&#x5B58;k </span>
-x, _ = foo()
-</code></pre>
-</li>
-</ol>
+                                <h1 id="&#x8868;&#x8FBE;&#x5F0F;">&#x8868;&#x8FBE;&#x5F0F;</h1>
 
                                 
                                 </section>
@@ -413,14 +366,10 @@ x, _ = foo()
 
             
                 
-                <a href="./" class="navigation navigation-prev " aria-label="Previous page: ch1 数据">
+                <a href="statement.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 语句">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
-                
-                <a href="constdefine.html" class="navigation navigation-next " aria-label="Next page: 常量定义">
-                    <i class="fa fa-angle-right"></i>
-                </a>
                 
             
         
@@ -429,7 +378,7 @@ x, _ = foo()
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"变量定义","level":"1.3.1","depth":2,"next":{"title":"常量定义","level":"1.3.2","depth":2,"path":"ch1/constdefine.md","ref":"ch1/constdefine.md","articles":[]},"previous":{"title":"ch1 数据","level":"1.3","depth":1,"path":"ch1/README.md","ref":"ch1/README.md","articles":[{"title":"变量定义","level":"1.3.1","depth":2,"path":"ch1/vardefine.md","ref":"ch1/vardefine.md","articles":[]},{"title":"常量定义","level":"1.3.2","depth":2,"path":"ch1/constdefine.md","ref":"ch1/constdefine.md","articles":[]},{"title":"数据类型","level":"1.3.3","depth":2,"path":"ch1/datatype.md","ref":"ch1/datatype.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"ch1/vardefine.md","mtime":"2022-07-07T02:31:14.269Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-07-07T07:01:26.772Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"表达式","level":"1.5.2","depth":2,"previous":{"title":"语句","level":"1.5.1","depth":2,"path":"ch3/statement.md","ref":"ch3/statement.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"ch3/expression.md","mtime":"2022-07-07T07:00:19.202Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-07-07T07:07:06.955Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
@@ -437,10 +386,6 @@ x, _ = foo()
         
     <script src="../gitbook/gitbook.js"></script>
     <script src="../gitbook/theme.js"></script>
-    
-        
-        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
-        
     
         
         <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>

@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>ch0 总览 · GitBook</title>
+        <title>分支 · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,10 +57,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="operator.html" />
+    <link rel="next" href="loop.html" />
     
     
-    <link rel="prev" href="../" />
+    <link rel="prev" href="./" />
     
 
     </head>
@@ -102,9 +102,9 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.2" data-path="./">
+        <li class="chapter " data-level="1.2" data-path="../ch0/">
             
-                <a href="./">
+                <a href="../ch0/">
             
                     
                     ch0 总览
@@ -116,9 +116,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.2.1" data-path="operator.html">
+        <li class="chapter " data-level="1.2.1" data-path="../ch0/operator.html">
             
-                <a href="operator.html">
+                <a href="../ch0/operator.html">
             
                     
                     运算符
@@ -129,9 +129,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.2" data-path="keywords.html">
+        <li class="chapter " data-level="1.2.2" data-path="../ch0/keywords.html">
             
-                <a href="keywords.html">
+                <a href="../ch0/keywords.html">
             
                     
                     关键字
@@ -205,9 +205,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4" data-path="../ch2/">
+        <li class="chapter " data-level="1.4" data-path="./">
             
-                <a href="../ch2/">
+                <a href="./">
             
                     
                     ch2 控制
@@ -219,9 +219,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.4.1" data-path="../ch2/switch.html">
+        <li class="chapter active" data-level="1.4.1" data-path="switch.html">
             
-                <a href="../ch2/switch.html">
+                <a href="switch.html">
             
                     
                     分支
@@ -232,9 +232,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.2" data-path="../ch2/loop.html">
+        <li class="chapter " data-level="1.4.2" data-path="loop.html">
             
-                <a href="../ch2/loop.html">
+                <a href="loop.html">
             
                     
                     循环
@@ -325,7 +325,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >ch0 总览</a>
+        <a href=".." >分支</a>
     </h1>
 </div>
 
@@ -340,7 +340,27 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="ch0-&#x603B;&#x89C8;">ch0 &#x603B;&#x89C8;</h1>
+                                <h1 id="&#x5206;&#x652F;">&#x5206;&#x652F;</h1>
+<h2 id="if">if</h2>
+<p>&#x53EF;&#x4EE5;&#x5E26;&#x6709;&#x521D;&#x59CB;&#x5316;&#x8BED;&#x53E5;</p>
+<pre><code class="lang-go"><span class="hljs-keyword">if</span> n:=<span class="hljs-string">&quot;abc&quot;</span>; x &gt; <span class="hljs-number">0</span>{
+
+} <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> x &lt; <span class="hljs-number">0</span> {
+} <span class="hljs-keyword">else</span>{
+
+}
+</code></pre>
+<h2 id="switch">switch</h2>
+<pre><code class="lang-go"><span class="hljs-keyword">switch</span> m {
+    <span class="hljs-keyword">case</span> <span class="hljs-number">0</span>, <span class="hljs-number">1</span>:
+    fmt.<span class="hljs-built_in">println</span>()
+    <span class="hljs-keyword">case</span> <span class="hljs-number">2</span>:
+    fmt.<span class="hljs-built_in">println</span>()
+    <span class="hljs-keyword">default</span>:
+    fmt.<span class="hljs-built_in">println</span>()
+}
+</code></pre>
+<h2 id="select">select</h2>
 
                                 
                                 </section>
@@ -368,12 +388,12 @@
 
             
                 
-                <a href="../" class="navigation navigation-prev " aria-label="Previous page: Introduction">
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: ch2 控制">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="operator.html" class="navigation navigation-next " aria-label="Next page: 运算符">
+                <a href="loop.html" class="navigation navigation-next " aria-label="Next page: 循环">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -384,7 +404,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"ch0 总览","level":"1.2","depth":1,"next":{"title":"运算符","level":"1.2.1","depth":2,"path":"ch0/operator.md","ref":"ch0/operator.md","articles":[]},"previous":{"title":"Introduction","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"ch0/README.md","mtime":"2022-07-07T01:54:22.868Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-07-07T07:01:26.772Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"分支","level":"1.4.1","depth":2,"next":{"title":"循环","level":"1.4.2","depth":2,"path":"ch2/loop.md","ref":"ch2/loop.md","articles":[]},"previous":{"title":"ch2 控制","level":"1.4","depth":1,"path":"ch2/README.md","ref":"ch2/README.md","articles":[{"title":"分支","level":"1.4.1","depth":2,"path":"ch2/switch.md","ref":"ch2/switch.md","articles":[]},{"title":"循环","level":"1.4.2","depth":2,"path":"ch2/loop.md","ref":"ch2/loop.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"ch2/switch.md","mtime":"2022-07-07T06:59:41.974Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-07-07T07:07:06.955Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
@@ -392,10 +412,6 @@
         
     <script src="../gitbook/gitbook.js"></script>
     <script src="../gitbook/theme.js"></script>
-    
-        
-        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
-        
     
         
         <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>

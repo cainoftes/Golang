@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>表达式 · GitBook</title>
+        <title>关键字 · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,8 +57,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
+    <link rel="next" href="../ch1/" />
     
-    <link rel="prev" href="statement.html" />
+    
+    <link rel="prev" href="operator.html" />
     
 
     </head>
@@ -100,9 +102,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2" data-path="../ch0/">
+        <li class="chapter " data-level="1.2" data-path="./">
             
-                <a href="../ch0/">
+                <a href="./">
             
                     
                     ch0 总览
@@ -114,9 +116,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.2.1" data-path="../ch0/operator.html">
+        <li class="chapter " data-level="1.2.1" data-path="operator.html">
             
-                <a href="../ch0/operator.html">
+                <a href="operator.html">
             
                     
                     运算符
@@ -127,9 +129,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.2" data-path="../ch0/keywords.html">
+        <li class="chapter active" data-level="1.2.2" data-path="keywords.html">
             
-                <a href="../ch0/keywords.html">
+                <a href="keywords.html">
             
                     
                     关键字
@@ -248,9 +250,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5" data-path="./">
+        <li class="chapter " data-level="1.5" data-path="../ch3/">
             
-                <a href="./">
+                <a href="../ch3/">
             
                     
                     ch3 程序结构
@@ -262,9 +264,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.5.1" data-path="statement.html">
+        <li class="chapter " data-level="1.5.1" data-path="../ch3/statement.html">
             
-                <a href="statement.html">
+                <a href="../ch3/statement.html">
             
                     
                     语句
@@ -275,9 +277,9 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.5.2" data-path="expression.html">
+        <li class="chapter " data-level="1.5.2" data-path="../ch3/expression.html">
             
-                <a href="expression.html">
+                <a href="../ch3/expression.html">
             
                     
                     表达式
@@ -323,7 +325,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >表达式</a>
+        <a href=".." >关键字</a>
     </h1>
 </div>
 
@@ -338,7 +340,41 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="&#x8868;&#x8FBE;&#x5F0F;">&#x8868;&#x8FBE;&#x5F0F;</h1>
+                                <h1 id="&#x5173;&#x952E;&#x5B57;">&#x5173;&#x952E;&#x5B57;</h1>
+<h2 id="&#x5173;&#x952E;&#x5B57;">&#x5173;&#x952E;&#x5B57;</h2>
+<p>&#x4E3B;&#x8981;&#x53EF;&#x4EE5;&#x5206;&#x4E3A;&#x4E09;&#x7C7B;</p>
+<p>ref <a href="https://cloud.tencent.com/developer/article/1446291" target="_blank">Golang 25&#x4E2A;&#x4FDD;&#x7559;&#x5173;&#x952E;&#x5B57; - &#x817E;&#x8BAF;&#x4E91;&#x5F00;&#x53D1;&#x8005;&#x793E;&#x533A;-&#x817E;&#x8BAF;&#x4E91; (tencent.com)</a></p>
+<ol>
+<li><p>&#x5305;&#x7BA1;&#x7406;</p>
+<pre><code class="lang-go"><span class="hljs-keyword">import</span>    <span class="hljs-keyword">package</span>
+</code></pre>
+</li>
+<li><p>&#x7A0B;&#x5E8F;&#x5B9E;&#x4F53;&#x5B9A;&#x4E49;&#x4E0E;&#x58F0;&#x660E;</p>
+<pre><code class="lang-go"><span class="hljs-keyword">chan</span>    <span class="hljs-keyword">const</span>    <span class="hljs-keyword">func</span>    <span class="hljs-keyword">interface</span>    <span class="hljs-keyword">map</span>    <span class="hljs-keyword">struct</span>    <span class="hljs-keyword">type</span>    <span class="hljs-keyword">var</span>
+</code></pre>
+</li>
+<li><p>&#x7A0B;&#x5E8F;&#x6D41;&#x7A0B;&#x63A7;&#x5236;</p>
+<pre><code class="lang-go"><span class="hljs-keyword">break</span>    <span class="hljs-keyword">case</span>    <span class="hljs-keyword">continue</span>    <span class="hljs-keyword">default</span>    <span class="hljs-keyword">defer</span>    <span class="hljs-keyword">else</span>    <span class="hljs-keyword">fallthrough</span>     <span class="hljs-keyword">for</span>        <span class="hljs-keyword">go</span>        <span class="hljs-keyword">goto</span>
+<span class="hljs-keyword">if</span>        <span class="hljs-keyword">range</span>    <span class="hljs-keyword">return</span>    <span class="hljs-keyword">select</span>        <span class="hljs-keyword">switch</span>
+</code></pre>
+</li>
+</ol>
+<h2 id="&#x9884;&#x5B9A;&#x4E49;&#x6807;&#x8BC6;&#x7B26;">&#x9884;&#x5B9A;&#x4E49;&#x6807;&#x8BC6;&#x7B26;</h2>
+<p>&#x4E3B;&#x8981;&#x53EF;&#x4EE5;&#x5206;&#x4E3A;&#x4E09;&#x7C7B;</p>
+<ol>
+<li><p>&#x5185;&#x5EFA;&#x5E38;&#x91CF;</p>
+<pre><code class="lang-go"><span class="hljs-literal">true</span>    <span class="hljs-literal">false</span>    <span class="hljs-literal">iota</span>    <span class="hljs-literal">nil</span>
+</code></pre>
+</li>
+<li><p>&#x5185;&#x5EFA;&#x7C7B;&#x578B;</p>
+<pre><code class="lang-go"><span class="hljs-keyword">int</span>    <span class="hljs-keyword">int8</span>    <span class="hljs-keyword">int16</span>    <span class="hljs-keyword">int32</span>    <span class="hljs-keyword">int64</span>    <span class="hljs-keyword">uint</span>    <span class="hljs-keyword">uint8</span>    <span class="hljs-keyword">uint16</span>    <span class="hljs-keyword">uint32</span>    <span class="hljs-keyword">uint64</span>    <span class="hljs-keyword">uintptr</span>    <span class="hljs-keyword">float32</span>    <span class="hljs-keyword">float64</span> <span class="hljs-keyword">complex64</span>    <span class="hljs-keyword">complex128</span>    <span class="hljs-keyword">bool</span>    <span class="hljs-keyword">type</span>    <span class="hljs-keyword">rune</span>    <span class="hljs-keyword">string</span>    error
+</code></pre>
+</li>
+<li><p>&#x5185;&#x5EFA;&#x51FD;&#x6570;</p>
+<pre><code class="lang-go"><span class="hljs-built_in">make</span>    <span class="hljs-built_in">len</span>    <span class="hljs-built_in">cap</span>    <span class="hljs-built_in">new</span>    <span class="hljs-built_in">append</span>    <span class="hljs-built_in">copy</span>    <span class="hljs-built_in">close</span>    <span class="hljs-built_in">delete</span>    <span class="hljs-built_in">complex</span>    <span class="hljs-built_in">real</span>    <span class="hljs-built_in">imag</span>    <span class="hljs-built_in">panic</span>    <span class="hljs-built_in">recover</span>
+</code></pre>
+</li>
+</ol>
 
                                 
                                 </section>
@@ -366,10 +402,14 @@
 
             
                 
-                <a href="statement.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 语句">
+                <a href="operator.html" class="navigation navigation-prev " aria-label="Previous page: 运算符">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
+                
+                <a href="../ch1/" class="navigation navigation-next " aria-label="Next page: ch1 数据">
+                    <i class="fa fa-angle-right"></i>
+                </a>
                 
             
         
@@ -378,7 +418,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"表达式","level":"1.5.2","depth":2,"previous":{"title":"语句","level":"1.5.1","depth":2,"path":"ch3/statement.md","ref":"ch3/statement.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"ch3/expression.md","mtime":"2022-07-07T07:00:19.202Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-07-07T07:01:26.772Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"关键字","level":"1.2.2","depth":2,"next":{"title":"ch1 数据","level":"1.3","depth":1,"path":"ch1/README.md","ref":"ch1/README.md","articles":[{"title":"变量定义","level":"1.3.1","depth":2,"path":"ch1/vardefine.md","ref":"ch1/vardefine.md","articles":[]},{"title":"常量定义","level":"1.3.2","depth":2,"path":"ch1/constdefine.md","ref":"ch1/constdefine.md","articles":[]},{"title":"数据类型","level":"1.3.3","depth":2,"path":"ch1/datatype.md","ref":"ch1/datatype.md","articles":[]}]},"previous":{"title":"运算符","level":"1.2.1","depth":2,"path":"ch0/operator.md","ref":"ch0/operator.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"ch0/keywords.md","mtime":"2022-07-07T02:11:01.729Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-07-07T07:07:06.955Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
@@ -386,10 +426,6 @@
         
     <script src="../gitbook/gitbook.js"></script>
     <script src="../gitbook/theme.js"></script>
-    
-        
-        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
-        
     
         
         <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
